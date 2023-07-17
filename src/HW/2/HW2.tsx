@@ -47,7 +47,6 @@ export const HW2 = () => {
   let [currentUsers, setCurrentUsers] = useState<UsersObjectType>(users);
 
   const filterUsers = () => {
-    debugger;
     const filteredUsers = currentUsers.myFriends.filter((friend)=> {
       return friend.address.city === 'Los Angeles';
     })
